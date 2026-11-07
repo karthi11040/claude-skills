@@ -1,67 +1,63 @@
-# AGENTS.md — Universal Multi-Agent Workspace Guide
+# AGENTS.md — Universal AI Agent Tool Skills Guide
 
-Welcome to the **Amour Dating App & Agentic Design System** repository. This repository is configured to be fully agentic, supporting **OpenAI Codex**, **Claude**, **Gemini / Antigravity**, **Kimi (Moonshot)**, **ZDA (Z.ai / GLM)**, and **OpenCode**.
+Welcome to the **Claude & AI Agent Tool Skills** repository. This project is a production-grade collection of **Agent Tool Skills** designed to teach AI models (**Claude Code**, **OpenAI Codex**, **Google Gemini / Antigravity**, **Cursor**, **Moonshot Kimi**, **Z.ai GLM**, and universal coding agents) how to control external tools, construct vector design systems, and execute verified deep research.
 
 ---
 
-## 1. Direct Download & Skills Installation
+## 1. Quick Installation for Models & Agents
 
-### Direct Download Options
-- **Download Full Repository ZIP**:
-  - PowerShell: `Invoke-WebRequest -Uri "https://github.com/karthi11040/amour-dating-app/archive/refs/heads/main.zip" -OutFile "amour.zip"; Expand-Archive "amour.zip" -DestinationPath .`
-  - Linux / macOS (curl): `curl -L "https://github.com/karthi11040/amour-dating-app/archive/refs/heads/main.zip" -o amour.zip && unzip amour.zip`
-- **Direct Asset Downloads**:
-  - Vector Design: [`love.figcraft`](https://raw.githubusercontent.com/karthi11040/amour-dating-app/main/love.figcraft)
-  - Full Canvas Preview: [`love_preview.png`](https://raw.githubusercontent.com/karthi11040/amour-dating-app/main/love_preview.png)
+### Claude Code (Plugin Marketplace)
+```bash
+/plugin marketplace add karthi11040/claude-skills
+/plugin install engineering-skills@claude-code-skills
+```
 
-### Installing Skills into AI Environments
-Run the cross-platform skill installer:
+### Codex, Cursor, Gemini CLI, Copilot & Other Agents
+```bash
+npx skills add karthi11040/claude-skills
+```
+
+### Local Cross-Platform Deployment
 ```bash
 python install.py
 ```
-This automatically deploys all 3 skills (`figcraft`, `dating-app-design`, and `deep-research-synthesizer`) to all detected agent home folders.
 
 ---
 
-## 2. Project Overview & Artifacts
+## 2. How AI Models Use These Tool Skills
 
-- **Core Design File**: `love.figcraft` (Native FigCraft local archive, containing 6 mobile screens for an iOS dating app).
-- **Screens Render**: `love_preview.png` (High-res snapshot of all 6 frames side-by-side).
-- **Exported PNGs**: `exports/` (`Home.png`, `Dashboard.png`, `Match.png`, `Profile.png`, `Match Celebration.png`, `Discovery Filters.png`).
-- **Skills Directory**: `skills/` (and platform-specific mirrors in `.claude/skills/`, `.gemini/skills/`, `.codex/skills/`, `.zda/skills/`, `.kimi/skills/`, `.agents/skills/`).
+Agent skills use **Progressive Disclosure** and **Active Tool Execution**:
 
----
-
-## 3. Available Agent Skills
-
-This repository provides 3 production-grade agent skills:
-
-1. **`figcraft`** (`skills/figcraft/`):
-   - Automates inspecting, editing, converting, running, and exporting `.figcraft` vector design files via `figcraft-cli`.
-   - Supports both headless CLI automation and live desktop UI control via MCP (`figcraft-cli mcp`).
-
-2. **`dating-app-design`** (`skills/dating-app-design/`):
-   - Full mobile UX architecture, dark obsidian color tokens, swipe physics, card hierarchies, and micro-interactions for modern dating platforms.
-
-3. **`deep-research-synthesizer`** (`skills/deep-research-synthesizer/`):
-   - Investigates complex queries, scores source evidence credibility, reconciles conflicting viewpoints, and outputs structured decision dossiers.
+1. **Triggering**: The model indexes only the YAML frontmatter (`name`, `description`). Full instructions in `SKILL.md` are loaded on-demand only when a user prompt matches the trigger.
+2. **Execution**: The skill provides precise CLI commands, MCP tool signatures, and Python scripts that the model runs directly in the user's terminal/workspace.
+3. **Verification**: Models verify all actions by checking exit codes, inspecting rendered preview images (`figcraft-cli render`), and computing algorithmic scores (`verify_dossier.py`) before delivering final output.
 
 ---
 
-## 4. Tooling & CLI Reference
+## 3. Tool Skills Inventory
 
-FigCraft is powered by the local Rust binary `figcraft-cli`:
-- **Path on Windows**: `D:\applications\FigCraft\FigCraft\figcraft-cli.exe`
-- **Inspect**: `figcraft-cli info love.figcraft`
-- **Render canvas**: `figcraft-cli render --out love_preview.png love.figcraft`
-- **Export frames**: `figcraft-cli export --out exports/ love.figcraft`
-- **Convert format**: `figcraft-cli convert love.figcraft love.json`
-- **Execute script**: `figcraft-cli run script.json --in love.figcraft --out love.figcraft`
+1. **`figcraft`** (`skills/figcraft/SKILL.md`):
+   - **Target Tool**: Local `figcraft-cli` binary & FigCraft MCP server (`figcraft-cli mcp`).
+   - **Capabilities**: Inspecting vector layer hierarchies, executing procedural JSON modifications, rendering composite previews, and exporting artboards to PNG.
+
+2. **`dating-app-design`** (`skills/dating-app-design/SKILL.md`):
+   - **Target Tool / Domain**: High-conversion mobile UX architecture, dark obsidian tokens (`#0D0E16`, `#FF385C`, `#8B5CF6`), swipe gesture physics, card overlays, and interactive prototype linking.
+
+3. **`deep-research-synthesizer`** (`skills/deep-research-synthesizer/SKILL.md`):
+   - **Target Tool**: Algorithmic evidence verification scripts (`scripts/score_evidence.py`, `scripts/verify_dossier.py`).
+   - **Capabilities**: Multi-source investigations, source credibility grading, dispute resolution, and structured decision dossier compilation.
+
+---
+
+## 4. Reference Case Study
+
+To demonstrate model execution in practice, this repository includes [`love.figcraft`](./love.figcraft) — a complete 6-screen mobile dating application created entirely by an AI model using the `figcraft` tool skill and `dating-app-design` skill:
+- Preview: [`love_preview.png`](./love_preview.png)
+- Screen Artboards: [`exports/`](./exports/) (`Home.png`, `Dashboard.png`, `Match.png`, `Profile.png`, `Match Celebration.png`, `Discovery Filters.png`)
 
 ---
 
 ## 5. Development & Contribution Rules
 
-- Always preserve existing design layers, node IDs, and prototype interaction links when updating `love.figcraft`.
-- Ensure exported snapshots in `exports/` match changes made to `love.figcraft`.
-- Keep all skill mirrors in `.claude/`, `.gemini/`, `.codex/`, `.zda/`, and `.kimi/` synchronized with `skills/`.
+- Always ensure `SKILL.md` frontmatter includes standard `name:` and `description:` fields.
+- When adding new capabilities to `skills/`, run `python install.py` to synchronize all platform directories (`.claude/`, `.gemini/`, `.codex/`, `.kimi/`, `.zda/`, and `.agents/`).

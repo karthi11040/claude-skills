@@ -1,77 +1,41 @@
-# CODEX.md — OpenAI Codex & GitHub Copilot Agent Guide
+# CODEX.md — OpenAI Codex & GitHub Copilot Tool Skills Guide
 
 ## Overview
-This repository contains **Amour**, an iOS mobile dating application designed in **FigCraft**, equipped with AI agent skills and automation workflows for **OpenAI Codex**, **GitHub Copilot CLI**, and universal AI developer harnesses.
+This repository provides production-grade **AI Tool Skills** for **OpenAI Codex**, **GitHub Copilot CLI**, and universal AI developer agents.
 
 ---
 
-## 1. Direct Download & Skills Installation
+## 1. Quick Installation
 
-### Direct Download Archive
-- **PowerShell**:
-  ```powershell
-  Invoke-WebRequest -Uri "https://github.com/karthi11040/amour-dating-app/archive/refs/heads/main.zip" -OutFile "amour.zip"; Expand-Archive "amour.zip" -DestinationPath .
-  ```
-- **macOS / Linux**:
-  ```bash
-  curl -L "https://github.com/karthi11040/amour-dating-app/archive/refs/heads/main.zip" -o amour.zip && unzip amour.zip
-  ```
+### Via `npx skills add`:
+```bash
+npx skills add karthi11040/claude-skills -a codex
+```
 
-### Install Skills for Codex
-Run the installer to deploy skills into `.codex/skills/`:
+### Via Python Installer:
 ```bash
 python install.py --platform codex
 ```
 
 ---
 
-## 2. Codex Agent Skills Directory
+## 2. Available Tool Skills
 
-Codex agents discover skills from `.codex/skills/` or the root `skills/` directory:
-
-1. **`figcraft`** (`.codex/skills/figcraft/SKILL.md`):
-   - Automates inspecting, editing, converting, running, and exporting `.figcraft` vector design files via `figcraft-cli`.
-2. **`dating-app-design`** (`.codex/skills/dating-app-design/SKILL.md`):
-   - Mobile product design guidelines: swipe stacks, micro-interactions, conversation feeds, verification badges, and dark-mode color tokens.
-3. **`deep-research-synthesizer`** (`.codex/skills/deep-research-synthesizer/SKILL.md`):
-   - Multi-source research synthesis, confidence scoring, evidence matrix mapping, and structured reporting.
+1. **`figcraft`** (`skills/figcraft/SKILL.md`): Inspect, edit, render, and export vector design files programmatically.
+2. **`dating-app-design`** (`skills/dating-app-design/SKILL.md`): Mobile design system tokens, gesture physics, and interaction models.
+3. **`deep-research-synthesizer`** (`skills/deep-research-synthesizer/SKILL.md`): Algorithmic evidence verification, dispute resolution, and decision reporting.
 
 ---
 
-## 3. FigCraft CLI Automation Commands
-
-Codex can execute the local `figcraft-cli` binary directly:
+## 3. How Codex Executes Tools
 
 ```powershell
 # Inspect design document
 & "D:\applications\FigCraft\FigCraft\figcraft-cli.exe" info love.figcraft
 
-# Render full canvas composite
+# Render visual preview
 & "D:\applications\FigCraft\FigCraft\figcraft-cli.exe" render --out love_preview.png love.figcraft
 
-# Export all artboard frames
+# Export all artboards
 & "D:\applications\FigCraft\FigCraft\figcraft-cli.exe" export --out exports/ love.figcraft
-
-# Convert to JSON and back
-& "D:\applications\FigCraft\FigCraft\figcraft-cli.exe" convert love.figcraft love.json
-```
-
----
-
-## 4. Directory Layout
-
-```
-love/
-├── love.figcraft               # FigCraft native vector document (6 screens, 435 nodes)
-├── love_preview.png            # Visual composite render of all frames
-├── install.py                  # Universal skills installer
-├── exports/                    # Exported individual screen PNGs
-├── skills/                     # Canonical skills directory
-├── .codex/skills/              # OpenAI Codex skill mount directory
-├── CODEX.md                    # This instructions file
-├── AGENTS.md                   # Universal agent instructions
-├── CLAUDE.md                   # Claude Code instructions
-├── GEMINI.md                   # Gemini / Antigravity instructions
-├── KIMI.md                     # Moonshot Kimi instructions
-└── ZDA.md                      # Z.ai Developer Agent instructions
 ```

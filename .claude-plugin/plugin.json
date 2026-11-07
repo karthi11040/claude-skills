@@ -1,16 +1,16 @@
 {
   "$schema": "https://anthropic.com/schemas/claude-code-plugin.json",
-  "name": "amour-skills",
-  "displayName": "Amour Dating App & Agentic Design System",
+  "name": "claude-code-skills",
+  "displayName": "AI Agent Tool Skills & Automation Suite",
   "version": "1.0.0",
-  "description": "Production-grade skills for mobile dating app design, FigCraft vector design automation, and deep research synthesis.",
+  "description": "Production-grade tool skills teaching AI models how to automate vector UI design (FigCraft), construct mobile design systems, and execute deep research investigations.",
   "author": {
     "name": "karthi11040",
     "url": "https://github.com/karthi11040"
   },
-  "homepage": "https://github.com/karthi11040/amour-dating-app",
-  "repository": "https://github.com/karthi11040/amour-dating-app",
-  "keywords": ["dating-app", "figcraft", "mobile-design", "research", "agent-skills"],
+  "homepage": "https://github.com/karthi11040/claude-skills",
+  "repository": "https://github.com/karthi11040/claude-skills",
+  "keywords": ["agent-skills", "claude-code", "tool-skills", "figcraft", "mcp", "mobile-design", "deep-research"],
   "skills": [
     "./skills/figcraft",
     "./skills/dating-app-design",

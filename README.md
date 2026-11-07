@@ -1,282 +1,271 @@
-# Amour — Next-Gen Dating Mobile App & Agentic Design System
+# Claude & AI Agent Tool Skills
 
-[![Multi-Agent Ready](https://img.shields.io/badge/Multi--Agent-Claude%20%7C%20Gemini%20%7C%20Codex%20%7C%20Kimi%20%7C%20ZDA-blueviolet?style=for-the-badge)](./skills)
-[![FigCraft Compatible](https://img.shields.io/badge/Designed%20With-FigCraft%20Native-FF4B72?style=for-the-badge)](./love.figcraft)
+[![Skills Ecosystem](https://img.shields.io/badge/Agent%20Skills-Claude%20%7C%20Codex%20%7C%20Gemini%20%7C%20Cursor%20%7C%20Copilot-blueviolet?style=for-the-badge)](https://skills.sh)
+[![Claude Code Plugin](https://img.shields.io/badge/Claude%20Code-Plugin%20Marketplace-D97706?style=for-the-badge)](https://github.com/karthi11040/claude-skills)
+[![Open Source Skills](https://img.shields.io/badge/npx%20skills-Compatible-000000?style=for-the-badge)](https://github.com/vercel-labs/skills)
 [![License](https://img.shields.io/badge/License-MIT-emerald?style=for-the-badge)](./LICENSE)
 
-A complete, production-grade iOS dating application designed in native **FigCraft** vector format (`love.figcraft`), paired with an open-standard **Multi-Agent Skill Architecture** compatible with **Claude**, **Gemini / Antigravity**, **OpenAI Codex**, **Moonshot Kimi**, **Z.ai (GLM)**, and universal AI agent platforms.
+A collection of production-grade **AI Agent Tool Skills** that teach Large Language Models (**Claude Code**, **Gemini CLI**, **OpenAI Codex**, **Cursor**, **GitHub Copilot**, **Windsurf**, and universal coding agents) how to control external software tools, generate vector UI/UX architectures, and conduct verified deep research.
 
 ---
 
-## ⚡ Direct Agent Skills Installation
+## ⚡ Quick Install
 
-### Option A: Claude Code (Plugin Marketplace)
+### 1. Claude Code (Plugin Marketplace)
 
-Add this repository as a plugin marketplace in **Claude Code** and install skills directly:
+Add this repository directly to Claude Code's marketplace and install the tool skills:
 
 ```bash
-# 1. Add the Amour skills marketplace
-/plugin marketplace add karthi11040/amour-dating-app
+# Register this repository as a marketplace
+/plugin marketplace add karthi11040/claude-skills
 
-# 2. Install individual skills:
-/plugin install dating-app-design@amour-marketplace
-/plugin install figcraft@amour-marketplace
-/plugin install deep-research-synthesizer@amour-marketplace
+# Install the all-in-one engineering skills bundle:
+/plugin install engineering-skills@claude-code-skills
 
-# Or install the complete all-in-one suite:
-/plugin install amour-skills@amour-marketplace
+# Or install individual tool skills:
+/plugin install figcraft@claude-code-skills
+/plugin install dating-app-design@claude-code-skills
+/plugin install deep-research-synthesizer@claude-code-skills
 ```
 
 ---
 
-### Option B: Codex, Cursor, Gemini CLI, Copilot & Other Agents
+### 2. Codex, Cursor, Gemini CLI, Copilot & Other Agents
 
-Install directly using the open-source [skills](https://github.com/vercel-labs/skills) installer (`npx skills add`):
+Install directly via the open-source [skills](https://github.com/vercel-labs/skills) installer:
 
 ```bash
-# Add all skills from this repository interactively:
-npx skills add karthi11040/amour-dating-app
+# Interactively discover and install skills from this repository:
+npx skills add karthi11040/claude-skills
 
-# Install a specific skill:
-npx skills add karthi11040/amour-dating-app --skill dating-app-design
-npx skills add karthi11040/amour-dating-app --skill figcraft
-npx skills add karthi11040/amour-dating-app --skill deep-research-synthesizer
+# Install a specific tool skill:
+npx skills add karthi11040/claude-skills --skill figcraft
+npx skills add karthi11040/claude-skills --skill dating-app-design
+npx skills add karthi11040/claude-skills --skill deep-research-synthesizer
 
-# Install globally across all projects for all coding agents:
-npx skills add karthi11040/amour-dating-app -g --all
+# Install globally for all supported coding agents (-g --all):
+npx skills add karthi11040/claude-skills -g --all
 
-# Target a specific agent (e.g. claude-code, cursor, codex, gemini):
-npx skills add karthi11040/amour-dating-app -a claude-code
-npx skills add karthi11040/amour-dating-app -a cursor
-npx skills add karthi11040/amour-dating-app -a codex
+# Target a specific agent:
+npx skills add karthi11040/claude-skills --agent claude-code
+npx skills add karthi11040/claude-skills --agent cursor
+npx skills add karthi11040/claude-skills --agent codex
+npx skills add karthi11040/claude-skills --agent gemini
 ```
 
 ---
 
-## 📥 Direct Download & Repository Setup
-
-### Method 1: Direct Download (No Git Required)
-
-Download and extract the complete repository with a single terminal command:
-
-#### Windows (PowerShell):
-```powershell
-Invoke-WebRequest -Uri "https://github.com/karthi11040/amour-dating-app/archive/refs/heads/main.zip" -OutFile "amour-dating-app.zip"; Expand-Archive "amour-dating-app.zip" -DestinationPath .; cd "amour-dating-app-main"
-```
-
-#### macOS / Linux / Git Bash (curl):
-```bash
-curl -L "https://github.com/karthi11040/amour-dating-app/archive/refs/heads/main.zip" -o amour-dating-app.zip && unzip amour-dating-app.zip && cd amour-dating-app-main
-```
-
-#### Direct Web Browser Download:
-- 📦 **Download Complete Repository (.ZIP)**: [amour-dating-app.zip](https://github.com/karthi11040/amour-dating-app/archive/refs/heads/main.zip)
-- 🎨 **Download Native Vector Design File**: [`love.figcraft`](https://raw.githubusercontent.com/karthi11040/amour-dating-app/main/love.figcraft)
-- 🖼️ **Download Full Screen Composite**: [`love_preview.png`](https://raw.githubusercontent.com/karthi11040/amour-dating-app/main/love_preview.png)
-
----
-
-### Method 2: Clone via Git or GitHub CLI
+### 3. One-Command Python Universal Installer
 
 ```bash
-# Standard Git Clone
-git clone https://github.com/karthi11040/amour-dating-app.git
-cd amour-dating-app
+# Clone the repository
+git clone https://github.com/karthi11040/claude-skills.git
+cd claude-skills
 
-# Or via GitHub CLI
-gh repo clone karthi11040/amour-dating-app
-```
-
----
-
-### Method 3: Python Universal Installer (`install.py`)
-
-Deploy skills to all locally detected agent environments using Python:
-
-```bash
-# Install to all detected AI agent directories (Claude, Gemini, Codex, Kimi, ZDA)
+# Automatically install all skills into all detected agent directories
 python install.py
-
-# Or target specific platforms:
-python install.py --platform claude
-python install.py --platform gemini
-python install.py --platform codex
-python install.py --platform kimi
-python install.py --platform zda
-
-# Or install to a custom folder:
-python install.py --dest /path/to/custom/skills
 ```
 
-#### Manual Skill Directory Paths:
-| Platform | Destination Path |
-|---|---|
-| **Claude (Global)** | `~/.claude/skills/` |
-| **Google Gemini / Antigravity** | `~/.gemini/config/skills/` or `~/.gemini/antigravity/skills/` |
-| **OpenAI Codex / Copilot** | `.codex/skills/` (in your workspace root) |
-| **Moonshot Kimi** | `~/.kimi/skills/` |
-| **Z.ai (GLM)** | `~/.zda/skills/` |
-| **Universal Agents** | `~/.agents/skills/` |
+#### Direct ZIP Download:
+- 📦 **Download Repository Archive**: [claude-skills.zip](https://github.com/karthi11040/claude-skills/archive/refs/heads/main.zip)
 
 ---
 
-## 📸 Visual Showcase
+## 🧠 How Models Use These Tool Skills
 
-### Full Canvas Composite (6 Screens Side-by-Side)
-![Amour App Preview](./love_preview.png)
+Unlike static prompts, **Agent Skills** use **Progressive Disclosure** and **Active Tool Execution** to give AI models actionable capabilities without bloating their context window.
 
-### Screen Gallery
-
-| 01 • Home (Discover) | 02 • Dashboard (Explore) | 03 • Match & Chats |
-|:---:|:---:|:---:|
-| <img src="./exports/Home.png" width="260" alt="Home Screen" /> | <img src="./exports/Dashboard.png" width="260" alt="Dashboard Screen" /> | <img src="./exports/Match.png" width="260" alt="Match Screen" /> |
-| **Swipe Discovery Card Stack**<br/>Chloe (24), verification badge, tags, quote card, and 5 action buttons. | **Activities & Vibe Feed**<br/>Search, vibe pills, Today's Spotlight, Top Picks grid, and Live Radar. | **Story Tray & Messages**<br/>Gold Likes counter, unread rings, match banner, and 5 conversation threads. |
-
-| 04 • Profile & Stats | 05 • Match Celebration Modal | 06 • Discovery Filters Modal |
-|:---:|:---:|:---:|
-| <img src="./exports/Profile.png" width="260" alt="Profile Screen" /> | <img src="./exports/Match%20Celebration.png" width="260" alt="Match Celebration Modal" /> | <img src="./exports/Discovery%20Filters.png" width="260" alt="Discovery Filters Modal" /> |
-| **Profile & VIP Pass**<br/>Avatar with camera badge, VIP Platinum, 92% strength bar, metrics, and tags. | **"It's a Match!" Modal**<br/>Overlapping avatar halos, interlocking heart badge, and icebreaker input. | **Preferences Bottom Sheet**<br/>Interactive distance & age sliders, verification toggles, and passion chips. |
-
----
-
-## 🎨 Design System & Specifications
-
-All artboards use the native **iPhone 16** viewport standards (`393 × 852` pt):
-
-- **Color Palette**:
-  - `Background Dark`: `#0A0B10`
-  - `Card Surface`: `#13151F`
-  - `Card Border`: `#232738`
-  - `Brand Primary / Coral Pink`: `#FF4B72`
-  - `Brand Purple / Gradient Accent`: `#9B51E0`
-  - `Gold / VIP Accent`: `#FFB800`
-  - `Neon Teal / Online Status`: `#00F5D4`
-  - `Text Primary`: `#FFFFFF`
-  - `Text Secondary`: `#8E92A8`
-- **Typography**: SF Pro Display & SF Pro Text.
-- **Node Hierarchy**: 435 vector nodes organized into auto-layout stacks, card containers, interactive buttons, and modal overlays.
-- **Interactive Prototyping**: Native `proto.interaction` links connecting bottom navigation tabs, Like button to Match Celebration, Filter icon to Preferences sheet, and dismiss buttons.
-
----
-
-## 🤖 Multi-Agent Skills Architecture
-
-This repository includes a multi-platform skill tree ready for direct consumption by any leading agentic runtime:
-
-| Agent / Harness | Skill Path | Root Config | Description |
-|---|---|---|---|
-| **Universal / Standard** | `skills/` & `.agents/skills/` | [`AGENTS.md`](./AGENTS.md) | Universal skill specification compliant with open agent standards |
-| **Anthropic Claude** | `.claude/skills/` | [`CLAUDE.md`](./CLAUDE.md) | Claude Code and Claude Desktop compatible skill folders |
-| **Google Gemini & Antigravity** | `.gemini/skills/` | [`GEMINI.md`](./GEMINI.md) | Antigravity IDE and Gemini CLI skill integrations |
-| **OpenAI Codex** | `.codex/skills/` | [`CODEX.md`](./CODEX.md) | Codex workspace automation and instruction prompts |
-| **Moonshot Kimi** | `.kimi/skills/` | [`KIMI.md`](./KIMI.md) | Kimi K2.6 Turbo and FirePass agent configurations |
-| **Z.ai GLM Developer Agent** | `.zda/skills/` | [`ZDA.md`](./ZDA.md) | Z.ai / GLM-4 tool integration and workspace guide |
-
-### Skills Included
-
-1. **`figcraft`** ([`skills/figcraft/SKILL.md`](./skills/figcraft/SKILL.md)):
-   - Complete automation for the FigCraft desktop vector application and `figcraft-cli`.
-   - Supports headless rendering, frame export, layer queries, JSON conversions, and live MCP control.
-2. **`dating-app-design`** ([`skills/dating-app-design/SKILL.md`](./skills/dating-app-design/SKILL.md)):
-   - Comprehensive mobile design guidelines for dating and social discovery applications.
-   - Covers swipe card physics, match queues, discovery filters, trust badges, and dark obsidian color tokens.
-3. **`deep-research-synthesizer`** ([`skills/deep-research-synthesizer/SKILL.md`](./skills/deep-research-synthesizer/SKILL.md)):
-   - Advanced multi-perspective research investigation and evidence scoring skill.
-   - Includes evaluation scripts (`scripts/score_evidence.py`, `scripts/matrix_generator.py`) and decision dossier templates (`templates/dossier_template.md`).
-
----
-
-## 🚀 Working with FigCraft CLI
-
-The vector design is stored in `love.figcraft`. You can inspect, render, and export it using the `figcraft-cli` binary:
-
-```powershell
-# Windows PowerShell
-$FIGCRAFT = "D:\applications\FigCraft\FigCraft\figcraft-cli.exe"
-
-# 1. Inspect artboards and node statistics
-& $FIGCRAFT info love.figcraft
-
-# 2. Render all screens into a single high-resolution canvas
-& $FIGCRAFT render --out love_preview.png love.figcraft
-
-# 3. Export all screens as individual PNG images to exports/
-& $FIGCRAFT export --out exports/ love.figcraft
-
-# 4. Convert FigCraft archive to human-readable JSON
-& $FIGCRAFT convert love.figcraft love.json
+```mermaid
+flowchart TD
+    A[User Request] --> B[Model Evaluates System Prompts]
+    B --> C{Skill Trigger Matched?}
+    C -->|No| D[Standard LLM Response]
+    C -->|Yes: e.g. Design UI / Research| E[Model Dynamically Reads SKILL.md]
+    E --> F[Model Formulates Tool Execution Plan]
+    F --> G[Model Executes Tool Commands / MCP Calls]
+    G --> H[Model Inspects Output: Rendered PNG / JSON]
+    H --> I{Output Correct & Verified?}
+    I -->|Fix needed| G
+    I -->|Verified| J[Deliver Final Verified Artifact to User]
 ```
 
-### Running as an MCP Server
+### 1. Discovery & Progressive Disclosure
+1. When an agent boots, it indexes only the lightweight YAML frontmatter (`name` and `description`) of each skill.
+2. The full contents of `SKILL.md`, supporting helper scripts, and templates remain on disk and are **only read into context when the user's intent matches the trigger condition**.
 
-Connect FigCraft to Claude, Gemini, or Antigravity via the Model Context Protocol:
+### 2. Autonomous Tool Invocation
+When invoked, the skill instructs the model to execute specific CLI binaries, Model Context Protocol (MCP) servers, or Python helper scripts in the local workspace.
 
-```bash
-figcraft-cli mcp
+### 3. Closed-Loop Verification
+The model does not simply assume its code worked. The skill enforces **evidence before assertions**:
+- Running `figcraft-cli render` to visually inspect the resulting image.
+- Running `scripts/verify_dossier.py` to calculate evidence confidence scores.
+- Inspecting error codes and auto-correcting schema mistakes before replying to the user.
+
+---
+
+## 🛠️ Tool Skills Catalog
+
+### 1. `figcraft` — Headless Vector UI/UX Tool Skill
+**Location**: [`skills/figcraft/SKILL.md`](./skills/figcraft/SKILL.md)  
+**Trigger**: When the user asks to inspect, design, modify, prototype, render, or export `.figcraft` vector design files.
+
+#### How the Model Uses This Tool:
+The model interacts with the local `figcraft-cli` binary or the FigCraft MCP server to perform surgical vector operations:
+
+```
+User: "Add a dark mode Profile screen with user stats to app.figcraft"
+  │
+  ├── 1. Inspect: & "figcraft-cli.exe" info app.figcraft
+  │      Model discovers existing artboard bounds, frame IDs, and layout positions.
+  │
+  ├── 2. Execute: & "figcraft-cli.exe" run create_profile.json --in app.figcraft --out app.figcraft
+  │      Model emits procedural batch commands to create rectangles, text nodes, avatar halos, and buttons.
+  │
+  ├── 3. Link Interactions: & "figcraft-cli.exe" run link_nav.json --in app.figcraft --out app.figcraft
+  │      Model wires prototype transitions (proto.interaction.add) between tabs and screens.
+  │
+  ├── 4. Render & Verify: & "figcraft-cli.exe" render --out app_preview.png app.figcraft
+  │      Model views the resulting preview image to confirm alignments, spacing, and visual contrast.
+  │
+  └── 5. Export: & "figcraft-cli.exe" export --out exports/ app.figcraft
+         Model extracts individual PNG artboards for production handoff.
 ```
 
-Or connect directly to an open desktop FigCraft session on port 7979:
-
+#### MCP Integration:
+The model can also drive a live desktop FigCraft canvas in real time:
 ```bash
 figcraft-cli mcp --attach 7979
 ```
 
 ---
 
+### 2. `dating-app-design` — Mobile UX Architecture Skill
+**Location**: [`skills/dating-app-design/SKILL.md`](./skills/dating-app-design/SKILL.md)  
+**Trigger**: When the user asks to design, evaluate, or code mobile discovery, matchmaking, or social connection applications.
+
+#### How the Model Uses This Tool:
+The model applies strict, high-conversion design patterns and token hierarchies:
+- **Design Tokens**: Deep obsidian `#0D0E16`, elevated card surfaces `#161826`, vibrant coral `#FF385C`, electric violet `#8B5CF6`, sunset gold `#FF8A00`.
+- **Card Physics & Scrim**: Enforces full-bleed photo cards with bottom gradient scrims (`#00000000` to `#080911F5`) to guarantee AAA contrast for typography.
+- **Action Hierarchy**: Standardizes ergonomic floating action buttons (Rewind, Pass, Super Like, Match, Boost).
+- **Prototyping Links**: Automatically connects swipe actions to match celebration modals and filter buttons to bottom sheets.
+
+---
+
+### 3. `deep-research-synthesizer` — Multi-Perspective Investigation Skill
+**Location**: [`skills/deep-research-synthesizer/SKILL.md`](./skills/deep-research-synthesizer/SKILL.md)  
+**Trigger**: When the user requests in-depth research, claims verification, competitor analysis, or structured decision dossiers.
+
+#### How the Model Uses This Tool:
+The model uses automated Python verification tools packaged directly inside the skill:
+```
+User: "Investigate whether we should adopt technology X over Y for our stack"
+  │
+  ├── 1. Intake & Scope: Model classifies audience (Everyday vs Technical) and defines key hypotheses.
+  │
+  ├── 2. Evidence Triangulation: Model gathers opposing viewpoints across literature and benchmarks.
+  │
+  ├── 3. Automated Scoring: python skills/deep-research-synthesizer/scripts/score_evidence.py
+  │      Model runs algorithmic scoring on source credibility, empirical backing, and bias.
+  │
+  ├── 4. Matrix Generation: python skills/deep-research-synthesizer/scripts/matrix_generator.py
+  │      Model generates trade-off comparison tables and confidence scorecards.
+  │
+  └── 5. Dossier Delivery: Model compiles the verified decision dossier using templates/dossier_template.md.
+```
+
+---
+
+## 📱 Real-World Case Study: `love.figcraft`
+
+To prove the power of these tool skills, this repository includes a complete production dating app design created entirely by an AI agent using the **`figcraft`** and **`dating-app-design`** skills:
+
+- **Source File**: [`love.figcraft`](./love.figcraft) (Native FigCraft archive, 435 vector nodes across 6 top-level artboards).
+- **Composite Render**: [`love_preview.png`](./love_preview.png) (Full canvas render of all 6 screens side-by-side).
+- **Exported Artboards**: [`exports/`](./exports/) (`Home.png`, `Dashboard.png`, `Match.png`, `Profile.png`, `Match Celebration.png`, `Discovery Filters.png`).
+
+### Visual Showcase (Generated by AI Model):
+![Full Screen Composite](./love_preview.png)
+
+| 01 • Home (Discover) | 02 • Dashboard (Explore) | 03 • Match & Chats |
+|:---:|:---:|:---:|
+| <img src="./exports/Home.png" width="240" alt="Home Screen" /> | <img src="./exports/Dashboard.png" width="240" alt="Dashboard Screen" /> | <img src="./exports/Match.png" width="240" alt="Match Screen" /> |
+
+| 04 • Profile & Stats | 05 • Match Celebration | 06 • Discovery Filters |
+|:---:|:---:|:---:|
+| <img src="./exports/Profile.png" width="240" alt="Profile Screen" /> | <img src="./exports/Match%20Celebration.png" width="240" alt="Celebration Modal" /> | <img src="./exports/Discovery%20Filters.png" width="240" alt="Filter Bottom Sheet" /> |
+
+---
+
+## 🌐 Multi-Agent Platform Support
+
+This repository is structured to work out-of-the-box across all leading AI coding assistants:
+
+| Platform | Skills Path | Agent Guide | Supported Invocation |
+|---|---|---|---|
+| **Anthropic Claude Code** | `.claude/skills/` | [`CLAUDE.md`](./CLAUDE.md) | `/plugin marketplace add karthi11040/claude-skills`<br/>`/plugin install engineering-skills@claude-code-skills` |
+| **OpenAI Codex & Copilot** | `.codex/skills/` | [`CODEX.md`](./CODEX.md) | `npx skills add karthi11040/claude-skills -a codex` |
+| **Google Gemini & Antigravity** | `.gemini/skills/` | [`GEMINI.md`](./GEMINI.md) | `npx skills add karthi11040/claude-skills -a gemini` |
+| **Cursor & Windsurf** | `.agents/skills/` | [`AGENTS.md`](./AGENTS.md) | `npx skills add karthi11040/claude-skills -a cursor` |
+| **Moonshot Kimi** | `.kimi/skills/` | [`KIMI.md`](./KIMI.md) | `python install.py --platform kimi` |
+| **Z.ai Developer Agent (GLM)** | `.zda/skills/` | [`ZDA.md`](./ZDA.md) | `python install.py --platform zda` |
+
+---
+
 ## 📂 Repository Structure
 
 ```
-love/
-├── love.figcraft                     # Native FigCraft vector document (6 frames, 435 nodes)
-├── love_preview.png                  # Canvas render showing all 6 screens side-by-side
-├── install.py                        # Universal 1-command skills installer for all agents
-├── package.json                      # Node & skills registry manifest
-├── .claude-plugin/                   # Claude Code plugin & marketplace registry
+claude-skills/
+├── skills/                           # Canonical skill packages (for npx skills add)
+│   ├── figcraft/
+│   │   ├── SKILL.md                  # FigCraft CLI & MCP automation instructions
+│   │   └── AGENTS.md
+│   ├── dating-app-design/
+│   │   ├── SKILL.md                  # Mobile UX architecture & design tokens
+│   │   └── AGENTS.md
+│   └── deep-research-synthesizer/
+│       ├── SKILL.md                  # Investigation workflow & scoring instructions
+│       ├── README.md
+│       ├── install_skill.py
+│       ├── scripts/
+│       │   ├── matrix_generator.py   # Matrix comparison script
+│       │   ├── score_evidence.py     # Source credibility scoring script
+│       │   └── verify_dossier.py     # Dossier verification script
+│       └── templates/
+│           ├── executive-brief.md
+│           └── technical-deep-dive.md
+├── .claude-plugin/                   # Claude Code plugin marketplace manifests
 │   ├── marketplace.json
 │   └── plugin.json
 ├── plugins/                          # Claude Code plugin packages
-│   ├── amour-skills/
+│   ├── amour-skills/                 # All-in-one engineering-skills bundle
 │   ├── dating-app-design/
 │   ├── figcraft/
 │   └── deep-research-synthesizer/
-├── exports/                          # Individual exported screen artboards
-│   ├── Home.png
-│   ├── Dashboard.png
-│   ├── Match.png
-│   ├── Profile.png
-│   ├── Match Celebration.png
-│   └── Discovery Filters.png
-├── skills/                           # Canonical skill definitions (for npx skills add)
-│   ├── figcraft/
-│   │   └── SKILL.md
-│   ├── dating-app-design/
-│   │   └── SKILL.md
-│   └── deep-research-synthesizer/
-│       ├── SKILL.md
-│       ├── scripts/
-│       │   ├── matrix_generator.py
-│       │   └── score_evidence.py
-│       └── templates/
-│           └── dossier_template.md
-├── .claude/skills/                   # Claude Code & Desktop skills mirror
-├── .gemini/skills/                   # Google Gemini & Antigravity skills mirror
-├── .codex/skills/                    # OpenAI Codex skills mirror
-├── .kimi/skills/                     # Moonshot Kimi skills mirror
-├── .zda/skills/                      # Z.ai / GLM skills mirror
-├── .agents/skills/                   # Universal agent harnesses skills mirror
-├── AGENTS.md                         # Universal agent workspace guide
-├── CLAUDE.md                         # Anthropic Claude agent guide
-├── GEMINI.md                         # Google Gemini / Antigravity agent guide
-├── CODEX.md                          # OpenAI Codex / Copilot agent guide
-├── KIMI.md                           # Moonshot Kimi agent guide
+├── package.json                      # Node & skills registry manifest
+├── install.py                        # Cross-platform Python installer
+├── love.figcraft                     # Reference vector file generated using skills
+├── love_preview.png                  # Canvas snapshot generated via figcraft-cli render
+├── exports/                          # Artboard snapshots generated via figcraft-cli export
+├── .claude/skills/                   # Claude mirror
+├── .gemini/skills/                   # Gemini mirror
+├── .codex/skills/                    # Codex mirror
+├── .kimi/skills/                     # Kimi mirror
+├── .zda/skills/                      # ZDA mirror
+├── .agents/skills/                   # Universal agent mirror
+├── AGENTS.md                         # Universal agent guide
+├── CLAUDE.md                         # Claude Code guide
+├── CODEX.md                          # OpenAI Codex guide
+├── GEMINI.md                         # Google Gemini / Antigravity guide
+├── KIMI.md                           # Moonshot Kimi guide
 ├── ZDA.md                            # Z.ai Developer Agent guide
-├── .gitignore                        # Git ignore rules for clean repository
-├── LICENSE                           # MIT License
-└── README.md                         # Complete project documentation & guide
+├── .gitignore
+└── LICENSE
 ```
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License — see the [LICENSE](./LICENSE) file for details.
+This repository is licensed under the MIT License — see the [LICENSE](./LICENSE) file for details.

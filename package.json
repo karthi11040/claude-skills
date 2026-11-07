@@ -1,8 +1,8 @@
 {
-  "name": "amour-dating-app",
+  "name": "claude-skills",
   "version": "1.0.0",
-  "description": "Amour mobile dating app in FigCraft with multi-agent skills for Claude Code, Codex, Gemini, Cursor, and Copilot",
-  "main": "love.figcraft",
+  "description": "Production-grade tool skills for AI models (Claude Code, Gemini CLI, OpenAI Codex, Cursor, Copilot) — includes FigCraft UI/UX vector automation, mobile design systems, and deep research synthesis.",
+  "main": "skills/figcraft/SKILL.md",
   "scripts": {
     "skills:install": "python install.py",
     "skills:list": "npx skills add . --list",
@@ -14,9 +14,10 @@
     "agent-skills",
     "claude-skills",
     "claude-code",
+    "tool-skills",
     "figcraft",
-    "dating-app",
     "mobile-design",
+    "deep-research",
     "gemini",
     "codex",
     "copilot",
@@ -26,15 +27,15 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/karthi11040/amour-dating-app.git"
+    "url": "git+https://github.com/karthi11040/claude-skills.git"
   },
   "bugs": {
-    "url": "https://github.com/karthi11040/amour-dating-app/issues"
+    "url": "https://github.com/karthi11040/claude-skills/issues"
   },
-  "homepage": "https://github.com/karthi11040/amour-dating-app#readme",
+  "homepage": "https://github.com/karthi11040/claude-skills#readme",
   "skills": [
-    "./skills/dating-app-design",
     "./skills/figcraft",
+    "./skills/dating-app-design",
     "./skills/deep-research-synthesizer"
   ]
 }

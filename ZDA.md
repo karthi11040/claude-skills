@@ -1,81 +1,43 @@
-# ZDA.md — Z.ai Developer Agent (GLM) Guide
+# ZDA.md — Z.ai Developer Agent (GLM) Tool Skills Guide
 
 ## Overview
-This repository contains **Amour**, an iOS mobile dating application designed in **FigCraft**, equipped with AI agent skills tailored for **Z.ai Developer Agent (ZDA)**, **GLM-4 / CodeGeeX**, and the Z.ai CLI tools.
+This repository provides production-grade **AI Tool Skills** for **Z.ai Developer Agent (ZDA)**, **GLM-4 / CodeGeeX**, and Z.ai developer tools.
 
 ---
 
-## 1. Direct Download & Skills Installation
+## 1. Quick Installation
 
-### Direct Download Archive
-- **PowerShell**:
-  ```powershell
-  Invoke-WebRequest -Uri "https://github.com/karthi11040/amour-dating-app/archive/refs/heads/main.zip" -OutFile "amour.zip"; Expand-Archive "amour.zip" -DestinationPath .
-  ```
-- **macOS / Linux**:
-  ```bash
-  curl -L "https://github.com/karthi11040/amour-dating-app/archive/refs/heads/main.zip" -o amour.zip && unzip amour.zip
-  ```
+### Via `npx skills add`:
+```bash
+npx skills add karthi11040/claude-skills
+```
 
-### Install Skills for ZDA
-Deploy skills to `~/.zda/skills/`:
+### Via Python:
 ```bash
 python install.py --platform zda
 ```
 
 ---
 
-## 2. Available ZDA Skills
+## 2. Available Tool Skills
 
-ZDA agents automatically discover skills configured in `.zda/skills/` or the root `skills/` directory:
-
-1. **`figcraft`** (`.zda/skills/figcraft/SKILL.md`):
-   - Command-line automation for FigCraft (`.figcraft`) design projects, vector node editing, layer queries, rendering, and headless exports.
-2. **`dating-app-design`** (`.zda/skills/dating-app-design/SKILL.md`):
-   - Mobile product design guidelines: swipe stacks, micro-interactions, conversation feeds, verification badges, and dark-mode color tokens.
-3. **`deep-research-synthesizer`** (`.zda/skills/deep-research-synthesizer/SKILL.md`):
-   - Multi-source research synthesis, confidence scoring, evidence matrix mapping, and structured reporting.
+1. **`figcraft`** (`.zda/skills/figcraft/SKILL.md`): Vector node manipulation, layer queries, rendering, and headless exports.
+2. **`dating-app-design`** (`.zda/skills/dating-app-design/SKILL.md`): Mobile design tokens, card swipe physics, and micro-interactions.
+3. **`deep-research-synthesizer`** (`.zda/skills/deep-research-synthesizer/SKILL.md`): Multi-source research synthesis and evidence verification.
 
 ---
 
-## 3. Command Reference
-
-Execute FigCraft tasks via the Windows CLI:
+## 3. Tool Execution Reference
 
 ```powershell
 $CLI = "D:\applications\FigCraft\FigCraft\figcraft-cli.exe"
 
-# Query file metadata, artboard dimensions, and node counts
+# Query file metadata
 & $CLI info love.figcraft
 
 # Generate composite preview image
 & $CLI render --out love_preview.png love.figcraft
 
-# Export all artboard frames into the exports/ folder
+# Export all artboard frames
 & $CLI export --out exports/ love.figcraft
-
-# Convert between binary archive and human-readable JSON
-& $CLI convert love.figcraft love.json
-& $CLI convert love.json love_rebuilt.figcraft
 ```
-
----
-
-## 4. Screen Inventory
-
-| Screen | Dimensions | Position (X, Y) | Description |
-|---|---|---|---|
-| **Home** | `393 × 852` pt | (0, 0) | Swipe discovery card with Chloe (24), badges, bio prompt, and 5 action buttons |
-| **Dashboard** | `393 × 852` pt | (440, 0) | Activity search, vibe pills, Today's Spotlight, Top Picks grid, and Live Radar |
-| **Match** | `393 × 852` pt | (880, 0) | Story circles with gold likes counter, celebration banner, and 5 chat threads |
-| **Profile** | `393 × 852` pt | (1320, 0) | Avatar with camera badge, VIP Platinum, completion bar, metrics, and tags |
-| **Match Celebration** | `393 × 852` pt | (1760, 0) | Celebration modal with dual overlapping avatars, heart badge, and icebreaker input |
-| **Discovery Filters** | `393 × 852` pt | (2200, 0) | Interactive bottom sheet with distance and age sliders and verification toggles |
-
----
-
-## 5. Best Practices for ZDA Agents
-
-- When updating vector layers, always validate that colors use valid 8-digit RGBA hex notation (e.g., `#FF4B72FF`, `#0D0E15FF`).
-- Run `& $CLI export --out exports/ love.figcraft` after making design modifications to synchronize the exported PNG files.
-- Maintain consistency across all skill directories (`.zda/`, `.claude/`, `.gemini/`, `.codex/`, `.kimi/`, and `.agents/`).
