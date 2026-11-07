@@ -1,0 +1,42 @@
+{
+  "$schema": "https://anthropic.com/schemas/claude-code-marketplace.json",
+  "name": "amour-marketplace",
+  "owner": {
+    "name": "karthi11040",
+    "url": "https://github.com/karthi11040"
+  },
+  "metadata": {
+    "description": "Amour Mobile Dating App & Agentic Design System Skills, Prototypes, and Tools for Claude Code",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "amour-skills",
+      "version": "1.0.0",
+      "description": "Complete bundle: Dating App Design System, FigCraft automation, and Deep Research Synthesizer",
+      "source": "./plugins/amour-skills",
+      "tags": ["dating-app", "mobile", "figcraft", "design-system", "research"]
+    },
+    {
+      "name": "dating-app-design",
+      "version": "1.0.0",
+      "description": "Mobile dating app design system, UX architecture, card stack mechanics, and interaction patterns",
+      "source": "./plugins/dating-app-design",
+      "tags": ["design", "mobile", "dating-app", "ui-ux", "figcraft"]
+    },
+    {
+      "name": "figcraft",
+      "version": "1.0.0",
+      "description": "Inspect, render, edit, and export FigCraft (.figcraft) vector interface designs and run the FigCraft MCP server",
+      "source": "./plugins/figcraft",
+      "tags": ["figcraft", "design-tool", "vector", "mcp", "prototyping"]
+    },
+    {
+      "name": "deep-research-synthesizer",
+      "version": "1.0.0",
+      "description": "Deep multi-perspective investigations, evidence verification, and structured decision dossier generation",
+      "source": "./plugins/deep-research-synthesizer",
+      "tags": ["research", "synthesis", "investigation", "analysis"]
+    }
+  ]
+}

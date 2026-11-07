@@ -8,11 +8,56 @@ A complete, production-grade iOS dating application designed in native **FigCraf
 
 ---
 
-## 📥 Direct Download & Quick Installation
+## ⚡ Direct Agent Skills Installation
+
+### Option A: Claude Code (Plugin Marketplace)
+
+Add this repository as a plugin marketplace in **Claude Code** and install skills directly:
+
+```bash
+# 1. Add the Amour skills marketplace
+/plugin marketplace add karthi11040/amour-dating-app
+
+# 2. Install individual skills:
+/plugin install dating-app-design@amour-marketplace
+/plugin install figcraft@amour-marketplace
+/plugin install deep-research-synthesizer@amour-marketplace
+
+# Or install the complete all-in-one suite:
+/plugin install amour-skills@amour-marketplace
+```
+
+---
+
+### Option B: Codex, Cursor, Gemini CLI, Copilot & Other Agents
+
+Install directly using the open-source [skills](https://github.com/vercel-labs/skills) installer (`npx skills add`):
+
+```bash
+# Add all skills from this repository interactively:
+npx skills add karthi11040/amour-dating-app
+
+# Install a specific skill:
+npx skills add karthi11040/amour-dating-app --skill dating-app-design
+npx skills add karthi11040/amour-dating-app --skill figcraft
+npx skills add karthi11040/amour-dating-app --skill deep-research-synthesizer
+
+# Install globally across all projects for all coding agents:
+npx skills add karthi11040/amour-dating-app -g --all
+
+# Target a specific agent (e.g. claude-code, cursor, codex, gemini):
+npx skills add karthi11040/amour-dating-app -a claude-code
+npx skills add karthi11040/amour-dating-app -a cursor
+npx skills add karthi11040/amour-dating-app -a codex
+```
+
+---
+
+## 📥 Direct Download & Repository Setup
 
 ### Method 1: Direct Download (No Git Required)
 
-You can download and extract the complete repository with a single terminal command:
+Download and extract the complete repository with a single terminal command:
 
 #### Windows (PowerShell):
 ```powershell
@@ -44,9 +89,9 @@ gh repo clone karthi11040/amour-dating-app
 
 ---
 
-### Method 3: One-Command AI Skills Installation
+### Method 3: Python Universal Installer (`install.py`)
 
-Once downloaded, run the universal cross-platform installer to automatically detect and copy the bundled skills (`figcraft`, `dating-app-design`, `deep-research-synthesizer`) into your agent's directory:
+Deploy skills to all locally detected agent environments using Python:
 
 ```bash
 # Install to all detected AI agent directories (Claude, Gemini, Codex, Kimi, ZDA)
@@ -178,37 +223,6 @@ figcraft-cli mcp --attach 7979
 
 ---
 
-## 📦 How to Upload to GitHub
-
-Follow these steps to initialize and push this entire repository to your GitHub account:
-
-```powershell
-# 1. Initialize git repository (already done in this repo)
-git init
-
-# 2. Add all files (respects .gitignore)
-git add .
-
-# 3. Commit the repository
-git commit -m "feat: Amour dating app with multi-agent skills"
-
-# 4. Set main branch
-git branch -M main
-
-# 5. Add your GitHub remote repository URL
-git remote add origin https://github.com/karthi11040/amour-dating-app.git
-
-# 6. Push to GitHub
-git push -u origin main
-```
-
-Or using GitHub CLI:
-```powershell
-gh repo create amour-dating-app --public --source=. --remote=origin --push
-```
-
----
-
 ## 📂 Repository Structure
 
 ```
@@ -216,6 +230,15 @@ love/
 ├── love.figcraft                     # Native FigCraft vector document (6 frames, 435 nodes)
 ├── love_preview.png                  # Canvas render showing all 6 screens side-by-side
 ├── install.py                        # Universal 1-command skills installer for all agents
+├── package.json                      # Node & skills registry manifest
+├── .claude-plugin/                   # Claude Code plugin & marketplace registry
+│   ├── marketplace.json
+│   └── plugin.json
+├── plugins/                          # Claude Code plugin packages
+│   ├── amour-skills/
+│   ├── dating-app-design/
+│   ├── figcraft/
+│   └── deep-research-synthesizer/
 ├── exports/                          # Individual exported screen artboards
 │   ├── Home.png
 │   ├── Dashboard.png
@@ -223,7 +246,7 @@ love/
 │   ├── Profile.png
 │   ├── Match Celebration.png
 │   └── Discovery Filters.png
-├── skills/                           # Canonical skill definitions
+├── skills/                           # Canonical skill definitions (for npx skills add)
 │   ├── figcraft/
 │   │   └── SKILL.md
 │   ├── dating-app-design/

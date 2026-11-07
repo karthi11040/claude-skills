@@ -1,0 +1,19 @@
+{
+  "$schema": "https://anthropic.com/schemas/claude-code-plugin.json",
+  "name": "amour-skills",
+  "displayName": "Amour Dating App & Agentic Design System",
+  "version": "1.0.0",
+  "description": "Production-grade skills for mobile dating app design, FigCraft vector design automation, and deep research synthesis.",
+  "author": {
+    "name": "karthi11040",
+    "url": "https://github.com/karthi11040"
+  },
+  "homepage": "https://github.com/karthi11040/amour-dating-app",
+  "repository": "https://github.com/karthi11040/amour-dating-app",
+  "keywords": ["dating-app", "figcraft", "mobile-design", "research", "agent-skills"],
+  "skills": [
+    "./skills/figcraft",
+    "./skills/dating-app-design",
+    "./skills/deep-research-synthesizer"
+  ]
+}

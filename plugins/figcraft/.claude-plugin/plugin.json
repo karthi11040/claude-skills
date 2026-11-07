@@ -1,0 +1,6 @@
+{
+  "name": "figcraft",
+  "displayName": "FigCraft Agent Automation",
+  "version": "1.0.0",
+  "description": "Inspect, render, edit, and export FigCraft (.figcraft) vector designs and run the FigCraft MCP server."
+}
