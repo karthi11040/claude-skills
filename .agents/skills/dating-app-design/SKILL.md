@@ -90,3 +90,4 @@ This skill provides comprehensive product design patterns, tokens, visual hierar
 - **Swipe Card Feedback**: Like action triggers the celebration overlay.
 - **Filter Action**: Filter button opens the preferences bottom sheet.
 - **Dismissal**: All modals must feature both a top close button ("✕") and a secondary dismiss action.
+

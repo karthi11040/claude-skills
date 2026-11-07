@@ -5,7 +5,30 @@ This repository contains **Amour**, a high-fidelity iOS mobile dating applicatio
 
 ---
 
-## 1. Available Skills for Gemini / Antigravity
+## 1. Direct Download & Skills Installation
+
+### Direct Download Archive
+- **PowerShell**:
+  ```powershell
+  Invoke-WebRequest -Uri "https://github.com/karthi11040/amour-dating-app/archive/refs/heads/main.zip" -OutFile "amour.zip"; Expand-Archive "amour.zip" -DestinationPath .
+  ```
+- **macOS / Linux**:
+  ```bash
+  curl -L "https://github.com/karthi11040/amour-dating-app/archive/refs/heads/main.zip" -o amour.zip && unzip amour.zip
+  ```
+
+### Install Skills for Gemini / Antigravity
+Deploy skills directly to your Gemini/Antigravity global config:
+```bash
+python install.py --platform gemini
+```
+Or manually copy skills to:
+- `~/.gemini/config/skills/`
+- `~/.gemini/antigravity/skills/`
+
+---
+
+## 2. Available Skills for Gemini / Antigravity
 
 Gemini and Antigravity automatically discover skills located under `.gemini/skills/` or `skills/`:
 
@@ -18,7 +41,7 @@ Gemini and Antigravity automatically discover skills located under `.gemini/skil
 
 ---
 
-## 2. MCP Server Configuration (Antigravity & Gemini)
+## 3. MCP Server Configuration (Antigravity & Gemini)
 
 To connect FigCraft as a Model Context Protocol (MCP) server in your `antigravity.json` or Gemini environment:
 
@@ -39,7 +62,7 @@ To connect FigCraft as a Model Context Protocol (MCP) server in your `antigravit
 
 ---
 
-## 3. Essential Commands
+## 4. Essential Commands
 
 Run these commands in PowerShell / Terminal:
 
@@ -59,7 +82,7 @@ Run these commands in PowerShell / Terminal:
 
 ---
 
-## 4. Mobile Screens Reference (`love.figcraft`)
+## 5. Mobile Screens Reference (`love.figcraft`)
 
 1. **Home** (`393 × 852` pt, x: 0): Main swipe card discovery stack with Chloe (24), badges, quote prompt, and 5 floating action buttons.
 2. **Dashboard** (`393 × 852` pt, x: 440): Activity feed, Today's Spotlight, Top Picks grid, and Live Radar.

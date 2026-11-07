@@ -16,3 +16,4 @@ Activate when the user asks to design, evaluate, or code a mobile dating app, sw
 3. **Hierarchy**:
    - Always include a dark gradient scrim (`#00000000` to `#080911F5`) over the bottom portion of photo cards to guarantee AAA readability for text.
    - Action buttons must be ergonomically ordered: Rewind (left), Pass, Super Like, Radiant Like (largest, center-right), Boost (right).
+

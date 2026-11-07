@@ -5,7 +5,27 @@ This repository contains **Amour**, an iOS mobile dating application designed in
 
 ---
 
-## 1. Codex Agent Skills Directory
+## 1. Direct Download & Skills Installation
+
+### Direct Download Archive
+- **PowerShell**:
+  ```powershell
+  Invoke-WebRequest -Uri "https://github.com/karthi11040/amour-dating-app/archive/refs/heads/main.zip" -OutFile "amour.zip"; Expand-Archive "amour.zip" -DestinationPath .
+  ```
+- **macOS / Linux**:
+  ```bash
+  curl -L "https://github.com/karthi11040/amour-dating-app/archive/refs/heads/main.zip" -o amour.zip && unzip amour.zip
+  ```
+
+### Install Skills for Codex
+Run the installer to deploy skills into `.codex/skills/`:
+```bash
+python install.py --platform codex
+```
+
+---
+
+## 2. Codex Agent Skills Directory
 
 Codex agents discover skills from `.codex/skills/` or the root `skills/` directory:
 
@@ -18,7 +38,7 @@ Codex agents discover skills from `.codex/skills/` or the root `skills/` directo
 
 ---
 
-## 2. FigCraft CLI Automation Commands
+## 3. FigCraft CLI Automation Commands
 
 Codex can execute the local `figcraft-cli` binary directly:
 
@@ -38,12 +58,13 @@ Codex can execute the local `figcraft-cli` binary directly:
 
 ---
 
-## 3. Directory Layout
+## 4. Directory Layout
 
 ```
 love/
 ├── love.figcraft               # FigCraft native vector document (6 screens, 435 nodes)
 ├── love_preview.png            # Visual composite render of all frames
+├── install.py                  # Universal skills installer
 ├── exports/                    # Exported individual screen PNGs
 ├── skills/                     # Canonical skills directory
 ├── .codex/skills/              # OpenAI Codex skill mount directory

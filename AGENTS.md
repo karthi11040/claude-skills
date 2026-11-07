@@ -4,7 +4,26 @@ Welcome to the **Amour Dating App & Agentic Design System** repository. This rep
 
 ---
 
-## 1. Project Overview & Artifacts
+## 1. Direct Download & Skills Installation
+
+### Direct Download Options
+- **Download Full Repository ZIP**:
+  - PowerShell: `Invoke-WebRequest -Uri "https://github.com/karthi11040/amour-dating-app/archive/refs/heads/main.zip" -OutFile "amour.zip"; Expand-Archive "amour.zip" -DestinationPath .`
+  - Linux / macOS (curl): `curl -L "https://github.com/karthi11040/amour-dating-app/archive/refs/heads/main.zip" -o amour.zip && unzip amour.zip`
+- **Direct Asset Downloads**:
+  - Vector Design: [`love.figcraft`](https://raw.githubusercontent.com/karthi11040/amour-dating-app/main/love.figcraft)
+  - Full Canvas Preview: [`love_preview.png`](https://raw.githubusercontent.com/karthi11040/amour-dating-app/main/love_preview.png)
+
+### Installing Skills into AI Environments
+Run the cross-platform skill installer:
+```bash
+python install.py
+```
+This automatically deploys all 3 skills (`figcraft`, `dating-app-design`, and `deep-research-synthesizer`) to all detected agent home folders.
+
+---
+
+## 2. Project Overview & Artifacts
 
 - **Core Design File**: `love.figcraft` (Native FigCraft local archive, containing 6 mobile screens for an iOS dating app).
 - **Screens Render**: `love_preview.png` (High-res snapshot of all 6 frames side-by-side).
@@ -13,7 +32,7 @@ Welcome to the **Amour Dating App & Agentic Design System** repository. This rep
 
 ---
 
-## 2. Available Agent Skills
+## 3. Available Agent Skills
 
 This repository provides 3 production-grade agent skills:
 
@@ -29,7 +48,7 @@ This repository provides 3 production-grade agent skills:
 
 ---
 
-## 3. Tooling & CLI Reference
+## 4. Tooling & CLI Reference
 
 FigCraft is powered by the local Rust binary `figcraft-cli`:
 - **Path on Windows**: `D:\applications\FigCraft\FigCraft\figcraft-cli.exe`
@@ -41,7 +60,7 @@ FigCraft is powered by the local Rust binary `figcraft-cli`:
 
 ---
 
-## 4. Development & Contribution Rules
+## 5. Development & Contribution Rules
 
 - Always preserve existing design layers, node IDs, and prototype interaction links when updating `love.figcraft`.
 - Ensure exported snapshots in `exports/` match changes made to `love.figcraft`.

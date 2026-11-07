@@ -5,7 +5,27 @@ This repository contains **Amour**, an iOS mobile dating application designed in
 
 ---
 
-## 1. Available ZDA Skills
+## 1. Direct Download & Skills Installation
+
+### Direct Download Archive
+- **PowerShell**:
+  ```powershell
+  Invoke-WebRequest -Uri "https://github.com/karthi11040/amour-dating-app/archive/refs/heads/main.zip" -OutFile "amour.zip"; Expand-Archive "amour.zip" -DestinationPath .
+  ```
+- **macOS / Linux**:
+  ```bash
+  curl -L "https://github.com/karthi11040/amour-dating-app/archive/refs/heads/main.zip" -o amour.zip && unzip amour.zip
+  ```
+
+### Install Skills for ZDA
+Deploy skills to `~/.zda/skills/`:
+```bash
+python install.py --platform zda
+```
+
+---
+
+## 2. Available ZDA Skills
 
 ZDA agents automatically discover skills configured in `.zda/skills/` or the root `skills/` directory:
 
@@ -18,7 +38,7 @@ ZDA agents automatically discover skills configured in `.zda/skills/` or the roo
 
 ---
 
-## 2. Command Reference
+## 3. Command Reference
 
 Execute FigCraft tasks via the Windows CLI:
 
@@ -41,7 +61,7 @@ $CLI = "D:\applications\FigCraft\FigCraft\figcraft-cli.exe"
 
 ---
 
-## 3. Screen Inventory
+## 4. Screen Inventory
 
 | Screen | Dimensions | Position (X, Y) | Description |
 |---|---|---|---|
@@ -54,7 +74,7 @@ $CLI = "D:\applications\FigCraft\FigCraft\figcraft-cli.exe"
 
 ---
 
-## 4. Best Practices for ZDA Agents
+## 5. Best Practices for ZDA Agents
 
 - When updating vector layers, always validate that colors use valid 8-digit RGBA hex notation (e.g., `#FF4B72FF`, `#0D0E15FF`).
 - Run `& $CLI export --out exports/ love.figcraft` after making design modifications to synchronize the exported PNG files.

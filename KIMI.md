@@ -5,7 +5,27 @@ This repository contains **Amour**, an iOS mobile dating application created in 
 
 ---
 
-## 1. Kimi Agent Skills Directory
+## 1. Direct Download & Skills Installation
+
+### Direct Download Archive
+- **PowerShell**:
+  ```powershell
+  Invoke-WebRequest -Uri "https://github.com/karthi11040/amour-dating-app/archive/refs/heads/main.zip" -OutFile "amour.zip"; Expand-Archive "amour.zip" -DestinationPath .
+  ```
+- **macOS / Linux**:
+  ```bash
+  curl -L "https://github.com/karthi11040/amour-dating-app/archive/refs/heads/main.zip" -o amour.zip && unzip amour.zip
+  ```
+
+### Install Skills for Kimi
+Deploy skills to `~/.kimi/skills/`:
+```bash
+python install.py --platform kimi
+```
+
+---
+
+## 2. Kimi Agent Skills Directory
 
 Kimi agent environments read skills from `.kimi/skills/` or the root `skills/` directory:
 
@@ -18,7 +38,7 @@ Kimi agent environments read skills from `.kimi/skills/` or the root `skills/` d
 
 ---
 
-## 2. Tool Integration & FigCraft CLI
+## 3. Tool Integration & FigCraft CLI
 
 Kimi code runner or terminal tools can execute the native `figcraft-cli` binary:
 
@@ -41,12 +61,13 @@ FIGCRAFT="D:/applications/FigCraft/FigCraft/figcraft-cli.exe"
 
 ---
 
-## 3. Project Structure
+## 4. Project Structure
 
 ```
 love/
 ├── love.figcraft               # FigCraft native vector document (6 screens, 435 nodes)
 ├── love_preview.png            # Visual composite render of all frames
+├── install.py                  # Universal skills installer
 ├── exports/                    # Exported individual screen PNGs
 │   ├── Home.png
 │   ├── Dashboard.png
@@ -63,12 +84,13 @@ love/
 ├── AGENTS.md                   # Universal agent instructions
 ├── CLAUDE.md                   # Claude Code instructions
 ├── GEMINI.md                   # Gemini / Antigravity instructions
+├── CODEX.md                    # OpenAI Codex instructions
 └── ZDA.md                      # Z.ai / GLM instructions
 ```
 
 ---
 
-## 4. Operating Guidelines for Kimi
+## 5. Operating Guidelines for Kimi
 
 1. When editing `love.figcraft`, ensure all node hierarchies, layer IDs, fills, strokes, and typography nodes are kept valid according to the FigCraft schema.
 2. After applying modifications to `love.figcraft`, always re-run `figcraft-cli render --out love_preview.png love.figcraft` and `figcraft-cli export --out exports/ love.figcraft` to ensure visual outputs match the source file.

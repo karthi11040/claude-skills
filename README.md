@@ -8,6 +8,73 @@ A complete, production-grade iOS dating application designed in native **FigCraf
 
 ---
 
+## 📥 Direct Download & Quick Installation
+
+### Method 1: Direct Download (No Git Required)
+
+You can download and extract the complete repository with a single terminal command:
+
+#### Windows (PowerShell):
+```powershell
+Invoke-WebRequest -Uri "https://github.com/karthi11040/amour-dating-app/archive/refs/heads/main.zip" -OutFile "amour-dating-app.zip"; Expand-Archive "amour-dating-app.zip" -DestinationPath .; cd "amour-dating-app-main"
+```
+
+#### macOS / Linux / Git Bash (curl):
+```bash
+curl -L "https://github.com/karthi11040/amour-dating-app/archive/refs/heads/main.zip" -o amour-dating-app.zip && unzip amour-dating-app.zip && cd amour-dating-app-main
+```
+
+#### Direct Web Browser Download:
+- 📦 **Download Complete Repository (.ZIP)**: [amour-dating-app.zip](https://github.com/karthi11040/amour-dating-app/archive/refs/heads/main.zip)
+- 🎨 **Download Native Vector Design File**: [`love.figcraft`](https://raw.githubusercontent.com/karthi11040/amour-dating-app/main/love.figcraft)
+- 🖼️ **Download Full Screen Composite**: [`love_preview.png`](https://raw.githubusercontent.com/karthi11040/amour-dating-app/main/love_preview.png)
+
+---
+
+### Method 2: Clone via Git or GitHub CLI
+
+```bash
+# Standard Git Clone
+git clone https://github.com/karthi11040/amour-dating-app.git
+cd amour-dating-app
+
+# Or via GitHub CLI
+gh repo clone karthi11040/amour-dating-app
+```
+
+---
+
+### Method 3: One-Command AI Skills Installation
+
+Once downloaded, run the universal cross-platform installer to automatically detect and copy the bundled skills (`figcraft`, `dating-app-design`, `deep-research-synthesizer`) into your agent's directory:
+
+```bash
+# Install to all detected AI agent directories (Claude, Gemini, Codex, Kimi, ZDA)
+python install.py
+
+# Or target specific platforms:
+python install.py --platform claude
+python install.py --platform gemini
+python install.py --platform codex
+python install.py --platform kimi
+python install.py --platform zda
+
+# Or install to a custom folder:
+python install.py --dest /path/to/custom/skills
+```
+
+#### Manual Skill Directory Paths:
+| Platform | Destination Path |
+|---|---|
+| **Claude (Global)** | `~/.claude/skills/` |
+| **Google Gemini / Antigravity** | `~/.gemini/config/skills/` or `~/.gemini/antigravity/skills/` |
+| **OpenAI Codex / Copilot** | `.codex/skills/` (in your workspace root) |
+| **Moonshot Kimi** | `~/.kimi/skills/` |
+| **Z.ai (GLM)** | `~/.zda/skills/` |
+| **Universal Agents** | `~/.agents/skills/` |
+
+---
+
 ## 📸 Visual Showcase
 
 ### Full Canvas Composite (6 Screens Side-by-Side)
@@ -116,24 +183,28 @@ figcraft-cli mcp --attach 7979
 Follow these steps to initialize and push this entire repository to your GitHub account:
 
 ```powershell
-# 1. Initialize git repository
+# 1. Initialize git repository (already done in this repo)
 git init
 
 # 2. Add all files (respects .gitignore)
 git add .
 
 # 3. Commit the repository
-git commit -m "Initial commit: Amour dating app design with multi-agent skills for Claude, Gemini, Codex, ZDA, and Kimi"
+git commit -m "feat: Amour dating app with multi-agent skills"
 
 # 4. Set main branch
 git branch -M main
 
 # 5. Add your GitHub remote repository URL
-# Replace USERNAME and REPO with your GitHub repository details
-git remote add origin https://github.com/USERNAME/REPO.git
+git remote add origin https://github.com/karthi11040/amour-dating-app.git
 
 # 6. Push to GitHub
 git push -u origin main
+```
+
+Or using GitHub CLI:
+```powershell
+gh repo create amour-dating-app --public --source=. --remote=origin --push
 ```
 
 ---
@@ -144,6 +215,7 @@ git push -u origin main
 love/
 ├── love.figcraft                     # Native FigCraft vector document (6 frames, 435 nodes)
 ├── love_preview.png                  # Canvas render showing all 6 screens side-by-side
+├── install.py                        # Universal 1-command skills installer for all agents
 ├── exports/                          # Individual exported screen artboards
 │   ├── Home.png
 │   ├── Dashboard.png
@@ -151,7 +223,7 @@ love/
 │   ├── Profile.png
 │   ├── Match Celebration.png
 │   └── Discovery Filters.png
-├── skills/                           # Standard skill definitions
+├── skills/                           # Canonical skill definitions
 │   ├── figcraft/
 │   │   └── SKILL.md
 │   ├── dating-app-design/
@@ -176,6 +248,7 @@ love/
 ├── KIMI.md                           # Moonshot Kimi agent guide
 ├── ZDA.md                            # Z.ai Developer Agent guide
 ├── .gitignore                        # Git ignore rules for clean repository
+├── LICENSE                           # MIT License
 └── README.md                         # Complete project documentation & guide
 ```
 

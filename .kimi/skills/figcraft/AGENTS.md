@@ -18,3 +18,4 @@ Activate when the user asks to inspect, create, edit, or export `.figcraft` desi
 4. **MCP Server**:
    - `figcraft-cli mcp` for headless operation.
    - `figcraft --control 7979` + `figcraft-cli mcp --attach 7979` for live UI control.
+
